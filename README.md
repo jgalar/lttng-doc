@@ -1,4 +1,4 @@
 lttng-doc
 =========
 
-Documentation about the LTTng project
+LTTng project documentation
