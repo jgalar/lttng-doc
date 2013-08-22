@@ -14,7 +14,7 @@ Coding standard
 
 LTTng uses the _Linux kernel coding style_[http://www.kernel.org/doc/Documentation/CodingStyle] with one addition: single line if-statements must be wrapped in braces.
 
-Although the LTTng codebase is primarily written in C, it does contain Perl, Python and Java code. There is no official coding standard for these languages. However, using a style consistent with the rest of the code written in that language is strongly encouraged.
+Although the LTTng code base is primarily written in C, it does contain Perl, Python and Java code. There is no official coding standard for these languages. However, using a style consistent with the rest of the code written in that language is strongly encouraged.
 
 Creating and sending a patch
 ----------------------------
@@ -23,11 +23,11 @@ The LTTng project's development flow is heavily e-mail based. Patches are submit
 
 The patch's subject (the commit message's first line) should be written in the present tense and not exceed 80 characters in width.
 
-The commit message's body should be detailed and explain the reasons behind the proposed change. Any related bug report(s) should be mentionned at the end of the message.
+The commit message's body should be detailed and explain the reasons behind the proposed change. Any related bug report(s) should be mentioned at the end of the message.
 
 Please note that patches should be as focused as possible. Do not, for instance, fix a bug and correct the indentation of an unrelated block of code as part of the same patch.
 
-Once your changes have been commited to your local branch, you may use Git's format-patch command to generate a patch file. The following command line will generate a patch from the latest commit: git format-patch -N1 -s --subject-prefix="PATCH project_name"
+Once your changes have been committed to your local branch, you may use Git's format-patch command to generate a patch file. The following command line will generate a patch from the latest commit: git format-patch -N1 -s --subject-prefix="PATCH project_name"
 
 The lttng-tools project contains a script (under extras/checkpatch.pl) that performs a number of checks on a patch to ensure it is ready. Run this script on your patch and correct any reported errors before submitting it to the mailing list.
 
