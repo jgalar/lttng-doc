@@ -1,0 +1,50 @@
+*** Contributor's guide ***
+
+Being an open source project, LTTng welcomes contributions from anyone.
+This guide will walk you through the process of contributing a patch to the LTTng project.
+
+Getting the source code
+-----------------------
+
+The LTTng project uses Git for source control. How to use Git is beyond the scope of this guide, but its _official website_[http://git-scm.com] contains many great tutorials.
+Please refer to the _download_ page for links to LTTng's Git repositories.
+
+Coding standard
+---------------
+
+LTTng uses the _Linux kernel coding style_[http://www.kernel.org/doc/Documentation/CodingStyle] with one addition: single line if-statements must be wrapped in braces.
+
+Although the LTTng codebase is primarily written in C, it does contain Perl, Python and Java code. There is no official coding standard for these languages. However, using a style consistent with the rest of the code written in that language is strongly encouraged.
+
+Creating and sending a patch
+----------------------------
+
+The LTTng project's development flow is heavily e-mail based. Patches are submitted and reviewed on the lttng-dev mailing list (lttng-dev@lists.lttng.org). The mailing list is also used to share and comment on RFCs.
+
+The patch's subject (the commit message's first line) should be written in the present tense and not exceed 80 characters in width.
+
+The commit message's body should be detailed and explain the reasons behind the proposed change. Any related bug report(s) should be mentionned at the end of the message.
+
+Please note that patches should be as focused as possible. Do not, for instance, fix a bug and correct the indentation of an unrelated block of code as part of the same patch.
+
+Once your changes have been commited to your local branch, you may use Git's format-patch command to generate a patch file. The following command line will generate a patch from the latest commit: git format-patch -N1 -s --subject-prefix="PATCH project_name"
+
+The lttng-tools project contains a script (under extras/checkpatch.pl) that performs a number of checks on a patch to ensure it is ready. Run this script on your patch and correct any reported errors before submitting it to the mailing list.
+
+You may find an example of a patch suitable for submission _here_[http://lists.lttng.org/pipermail/lttng-dev/2013-June/020574.html].
+
+Once you are confident your patch meets the required guide lines, you may use Git's send-email command to send your patch on the mailing list. Make sure you are _subscribed_[http://lists.lttng.org/cgi-bin/mailman/listinfo/lttng-dev] to the mailing list to follow and take part in discussions about your changes.
+You may join the file to an e-mail as an attachment if you can't send the patch directly using send-email.
+
+Reviews
+-------
+
+Once your patch has been posted to the mailing list, other contributors may propose modifications to your patch. This is completely normal. This collaborative code review is an integral part of our development process.
+
+Keep in mind that reviewing patches is time-consuming and, as such, may not be done right away. The delays may be affected by the current release cycle phase and the complexity of the proposed changes. If you think your patch might have been forgotten, please mention it on the _#lttng_[irc://irc.oftc.net/lttng] IRC channel rather than resubmitting.
+
+Release cycle
+-------------
+
+The LTTng project follows a release cycle that alternates between development and release candidate (RC) phases. The master branch is feature-frozen during RC phases; only bug fixes will be accepted during this period. However, patches adding new functionality may still be submitted and reviewed during the RC.
+The upcoming features and release dates are posted in a monthly digest on the mailing list.
