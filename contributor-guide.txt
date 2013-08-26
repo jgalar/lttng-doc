@@ -6,8 +6,8 @@ This guide will walk you through the process of contributing a patch to LTTng.
 Getting the source code
 -----------------------
 
-The LTTng project uses Git for source control. How to use Git is beyond the scope of this guide, but its _official website_[http://git-scm.com] contains many great tutorials.
-Please refer to the _download_ page for links to LTTng's Git repositories.
+The LTTng project uses Git for source control. How to use Git is beyond the scope of this guide, but its _official website_[http://git-scm.com] provides many great tutorials.
+Please refer to the _download_[http://lttng.org/download] page for links to LTTng's Git repositories.
 
 Coding standard
 ---------------
@@ -41,7 +41,7 @@ Reviews
 
 Once your patch has been posted to the mailing list, other contributors may propose modifications to your patch. This is completely normal. This collaborative code review is an integral part of our development process.
 
-Keep in mind that reviewing patches is time-consuming and, as such, may not be done right away. The delays may be affected by the current release cycle phase and the complexity of the proposed changes. If you think your patch might have been forgotten, please mention it on the _#lttng_[irc://irc.oftc.net/lttng] IRC channel rather than resubmitting.
+Keep in mind that reviewing patches is a time-consuming process and, as such, may not be done right away. The delays may be affected by the current release cycle phase and the complexity of the proposed changes. If you think your patch might have been forgotten, please mention it on the _#lttng_[irc://irc.oftc.net/lttng] IRC channel rather than resubmitting.
 
 Release cycle
 -------------
