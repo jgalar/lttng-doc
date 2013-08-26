@@ -1,7 +1,7 @@
 *** Contributor's guide ***
 
-Being an open source project, LTTng welcomes contributions from anyone.
-This guide will walk you through the process of contributing a patch to the LTTng project.
+Being an open source project, the LTTng project welcomes contributions from anyone.
+This guide will walk you through the process of contributing a patch to LTTng.
 
 Getting the source code
 -----------------------
