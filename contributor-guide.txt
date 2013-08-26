@@ -21,7 +21,7 @@ Creating and sending a patch
 
 The LTTng project's development flow is heavily e-mail based. Patches are submitted and reviewed on the lttng-dev mailing list (lttng-dev@lists.lttng.org). The mailing list is also used to share and comment on RFCs.
 
-The patch's subject (the commit message's first line) should be written in the present tense and not exceed 80 characters in width.
+The patch's subject (the commit message's first line) should be written in the present tense and not exceed 72 characters in width.
 
 The commit message's body should be detailed and explain the reasons behind the proposed change. Any related bug report(s) should be mentioned at the end of the message.
 
